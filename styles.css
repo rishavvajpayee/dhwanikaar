@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* html, body {
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 0;
+    bottom: 0;
+} */
+.line{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    height: 36px;
+    line-height: 36px;
+    background-color: black;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+li{
+    float: left;
+    border-right: 2px solid black;
+
+}
+.top{
+    display: block;
+    padding: 0 28px;
+    color: darkorange;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.top:hover, #active{
+    background-color:powderblue;
+    color: black;
+}
+
+body{
+    background:cadetblue;
+    color: black;
+}
+h1{
+    font-family:Impact;
+    color: black;
+    text-align: center;
+    font-size: 400%;
+    transition: 0.3s ease;
+}
+h1:hover{
+    
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+p{
+    transition: 0.3s ease;
+    font-family: Georgia;
+    text-align: center;
+}
+
+/* please enter your details id */
+#please{
+    transition: 0.3s ease;
+}    
+
+#please:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+p:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+}
+
+h2{
+    /* position: fixed; */
+    color: white;
+    font-family: 'Courier New';
+    transition: 0.3s ease;
+    line-height: 50px;
+}
+
+
+h2:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2)
+
+}
+h3{
+    font-size: 130%;
+    color: darkorange;
+    text-align: center;
+    transition: 0.3s ease;
+    font-family: monospace;
+    font-size: x-large;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+    border: 20px solid cadetblue;
+}
+h3:hover
+{
+    transform:scale(0.97);
+    -webkit-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+}
+.img {
+    margin: 0px;
+    padding:0px;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+    align-self:center;
+}
+.img:hover{
+    transform: scale(1.000);
+    -webkit-transform: scale(1.00);
+    -ms-transform: scale(1.0);
+}
+.img_list{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    transition : 0.3s ease;
+    border-radius: 20px;
+    border-bottom: 10px solid black;
+}
+.img_list:hover {
+    border-radius: 30px;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+
+.col {
+    margin: 10px;
+    width: 23.5%;
+    float: left;
+    align-self: center;
+    padding: 40px;
+    background-color: black;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s ease;
+    border-radius: 3px;
+}
+
+/* Hover on Parent Container */
+.col:hover{
+    transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    border-radius: 20px;
+    cursor: pointer;
+}
+/*  the message box info */
+.col div{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: whitesmoke;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: monospace;
+    font-size: 100%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+    transition: 0.1s ease-in;
+   }
+   
+
+/*  the message box h, w, opacity options */
+.col:hover div{
+    width: auto;
+    height: auto;
+    padding: 40px 40px;
+    visibility: visible;
+    opacity: 0.7; 
+    border-radius: 20px;
+   }
+
+.row{
+    margin: 10px;
+    padding:10px;
+
+}
+.row::after{
+    content: "";
+    clear: both;
+    width: 33.33%;
+    display: table;
+}
+/* social media icons */
+.soc{
+    padding: 25px;
+    text-align: center;
+    background-color: black;
+}
+
+.fa {
+    position: inherit;
+    padding: 20px;
+    font-size: 80px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 50px;
+    box-shadow: 1px 2px 10px 1px grey;
+}
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+}
+  
+  /* Set a specific color for each brand */
+
+  /* Facebook */
+.fa-spotify{
+    background:green;
+    border-radius: 50%;
+    width: 4%;
+    color: white;
+    transition: 0.2s ease;
+}
+  
+  /* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+    width: 4%;
+    transition: 0.2s ease;
+}
+
+.fa-instagram{
+    background: black ;
+    color: tomato;
+    border-radius: 50%;
+    width: 4%; 
+    transition: 0.2s ease;   
+}
+
+.fa-youtube{
+    size: 2 em;
+    background: rgb(235, 79, 52);
+    color: white;
+    border-radius: 50%;
+    width: 4%;
+    transition: 0.2s ease;
+}
+
+#lasthead{
+    color: white;
+    background-color: black;
+    transition: 0.3s ease;
+}
+
+#lasthead:hover{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+}
+.end{
+    text-align: center;
+    color: white;
+    background-color: black;
+    transition: ease;
+}
+
+.end:hover{
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+}
+
+.exc{
+    background-color: black;
+    color: darkorange;
+    margin: 30px;
+    text-align: center;
+    border: 2px solid cadetblue;
+    font-size: x-large;
+
+}
+
+/* music player config */
